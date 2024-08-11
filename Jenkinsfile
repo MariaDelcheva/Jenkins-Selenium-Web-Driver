@@ -49,7 +49,7 @@ pipeline {
         stage('Run TestProject3') {
             steps {
                 // Run tests using the solution file
-                bat 'dotnet test TestProject2/TestProject2.csproj --logger "trx;LogFileName=TestResults.trx"'
+                bat 'dotnet test TestProject3/TestProject3.csproj --logger "trx;LogFileName=TestResults.trx"'
             }
         }
     }
